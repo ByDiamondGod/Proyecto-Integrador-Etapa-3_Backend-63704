@@ -15,14 +15,14 @@ const productoCreateValidator = [
         .notEmpty()
         .trim()
         .withMessage('El nombre es obligatorio')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 20 })
+        .withMessage('Maximo 20 caracteres'),
     check('detalles')
         .notEmpty()
         .trim()
         .withMessage('Los detalles son obligatorios')
-        .isLength({ max: 200 })
-        .withMessage('El maximo es 200 caracteres'),
+        .isLength({ max: 300 })
+        .withMessage('El maximo es 300 caracteres'),
     // check('foto')
     //     .isURL(),
     check('precio')
@@ -32,8 +32,8 @@ const productoCreateValidator = [
         // .withMessage('El precio debe ser un número')
         .isFloat({ gt: 0 })
         .withMessage('Ingrese un número de precio (mayor a cero)')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+         .isLength({ max: 10 })
+         .withMessage('Maximo 10 caracteres'),
     check('stock')
         .notEmpty()
         .withMessage('Ingrese un número de stock')
@@ -41,20 +41,20 @@ const productoCreateValidator = [
         // .withMessage('El stock debe ser un número')
         .isInt({ gt: -1 })
         .withMessage('Ingrese un valor de stock (mayor o igual a cero)')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+         .isLength({ max: 10 })
+         .withMessage('Maximo 10 caracteres'),
     check('marca')
         .notEmpty()
         .trim()
         .withMessage('La marca es obligatoria')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 30 })
+        .withMessage('Maximo 30 caracteres'),
     check('categoria')
         .notEmpty()
         .trim()
         .withMessage('La categoría es obligatoria')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 30 })
+        .withMessage('Maximo 30 caracteres'),
     check('envio')
         .isBoolean()
         .withMessage('El campo envío debe ser un valor booleano (true or false)'),
@@ -71,40 +71,40 @@ const productoUpdateValidator = [
         .notEmpty()
         .trim()
         .withMessage('El nombre es obligatorio')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 20 })
+        .withMessage('Maximo 20 caracteres'),
     check('detalles')
         .notEmpty()
         .trim()
         .withMessage('Los detalles son obligatorios')
-        .isLength({ max: 200 })
-        .withMessage('El maximo es 200 caracteres'),
+        .isLength({ max: 300 })
+        .withMessage('El maximo es 300 caracteres'),
     check('precio')
         .notEmpty()
         .withMessage('Ingrese un número de precio')
         .isFloat({ gt: 0 })
         .withMessage('Ingrese un número de precio (mayor a cero)')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 10 })
+        .withMessage('Maximo 10 caracteres'),
     check('stock')
         .notEmpty()
         .withMessage('Ingrese un número de stock')
         .isInt({ gt: -1 })
         .withMessage('Ingrese un valor de stock (mayor o igual a cero)')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 10 })
+        .withMessage('Maximo 10 caracteres'),
     check('marca')
         .notEmpty()
         .trim()
         .withMessage('La marca es obligatoria')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 30 })
+        .withMessage('Maximo 30 caracteres'),
     check('categoria')
         .notEmpty()
         .trim()
         .withMessage('La categoría es obligatoria')
-        .isLength({ max: 15 })
-        .withMessage('Maximo 15 caracteres'),
+        .isLength({ max: 30 })
+        .withMessage('Maximo 30 caracteres'),
     check('envio')
         .isBoolean()
         .withMessage('El campo envío debe ser un valor booleano (true or false)'),
