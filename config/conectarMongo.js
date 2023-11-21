@@ -11,6 +11,3 @@ const conectarMongo = async () => {
     }
 }
 export default conectarMongo
-
-
-
